@@ -1,3 +1,10 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
@@ -55,9 +62,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*body{font-family: 'Lobster Two', cursive;}*/
-body{font-family: 'Open Sans', sans-serif;}
+.left{float: left;}
+.right{float:right;}
+.container{max-width: 1024px; width: 100%; margin: 0 auto;}
+body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
 
+.nav{
+    ul{
+        @extend .right;
+        li{
+            a{
+                font-size:16px;
+                @extend .left;
+            }
+        }
+
+    }
+
+}
 
 
 
