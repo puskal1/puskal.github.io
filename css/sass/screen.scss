@@ -68,12 +68,21 @@ textarea {
 body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
 
 .nav{
+    width: 100%;
     ul{
+        width: 100%;
         @extend .right;
         li{
             a{
                 font-size:16px;
                 @extend .left;
+                display: inline-block;
+                padding: 10px 20px;
+                color: #fff;
+                background-color: #c82441;
+                &:hover{
+                    background-color: #e25a72;
+                }
             }
         }
 
