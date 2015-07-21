@@ -168,10 +168,17 @@ body {
   padding: 10px 20px;
   color: #fff;
   background-color: #c82441;
+  text-decoration: none;
 }
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .nav ul li a:hover {
   background-color: #e25a72;
+}
+
+/* line 93, ../sass/screen.scss */
+.profile_pic {
+  border-radius: 128px;
+  width: 15%;
 }
 
 /* ==========================================================================
@@ -180,13 +187,13 @@ body {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -198,7 +205,7 @@ body {
   width: 1px;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -209,24 +216,24 @@ body {
   width: auto;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -235,7 +242,7 @@ body {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 173, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   *,
   *:before,
   *:after {
@@ -245,52 +252,52 @@ body {
     text-shadow: none !important;
   }
 
-  /* line 182, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 187, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 191, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 195, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 200, ../sass/screen.scss */
+  /* line 201, ../sass/screen.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 206, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 210, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 215, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 220, ../sass/screen.scss */
   p,
   h2,
   h3 {
@@ -298,7 +305,7 @@ body {
     widows: 3;
   }
 
-  /* line 226, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   h2,
   h3 {
     page-break-after: avoid;
