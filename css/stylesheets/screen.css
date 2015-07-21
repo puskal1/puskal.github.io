@@ -68,26 +68,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-/* line 10, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 hr {
   display: block;
   height: 1px;
@@ -97,7 +97,7 @@ hr {
   padding: 0;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 audio,
 canvas,
 iframe,
@@ -107,19 +107,19 @@ video {
   vertical-align: middle;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -130,38 +130,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .left, .nav ul li a {
   float: left;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .right, .nav ul {
   float: right;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .nav {
   width: 100%;
 }
-/* line 72, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .nav ul {
   width: 100%;
 }
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .nav ul li a {
   font-size: 16px;
   display: inline-block;
@@ -170,15 +170,22 @@ body {
   background-color: #c82441;
   text-decoration: none;
 }
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .nav ul li a:hover {
   background-color: #e25a72;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .profile_pic {
   border-radius: 128px;
   width: 15%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 95, ../sass/screen.scss */
+.profile_pic:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /* ==========================================================================
@@ -187,13 +194,13 @@ body {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 125, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -205,7 +212,7 @@ body {
   width: 1px;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -216,24 +223,24 @@ body {
   width: auto;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -242,7 +249,7 @@ body {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 174, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   *,
   *:before,
   *:after {
@@ -252,52 +259,52 @@ body {
     text-shadow: none !important;
   }
 
-  /* line 183, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 195, ../sass/screen.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 192, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 196, ../sass/screen.scss */
+  /* line 203, ../sass/screen.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 201, ../sass/screen.scss */
+  /* line 208, ../sass/screen.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 207, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 211, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 216, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 220, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   p,
   h2,
   h3 {
@@ -305,7 +312,7 @@ body {
     widows: 3;
   }
 
-  /* line 227, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   h2,
   h3 {
     page-break-after: avoid;
