@@ -34,17 +34,17 @@ pkApp.config(function($routeProvider) {
 // create the controller and inject Angular's $scope
 pkApp.controller('mainController', function($scope) {
     // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look! Home Page';
+    $scope.message = 'Welcome to my beautiful website. :)';
 });
 
 pkApp.controller('projectsController', function($scope) {
-    $scope.message = 'Look! I am an Projects page.';
+    $scope.message = 'I will add my project soon.';
 });
 
 pkApp.controller('contactController', function($scope) {
-    $scope.message = 'Contact us! JK. This is just a Contact Page.';
+    $scope.message = 'puskal_kafle@yahoo.com';
 });
 
 pkApp.controller('expertiseController', function($scope) {
-    $scope.message = 'Expertise! JK. This is just a demo.';
+    $scope.message = 'My area of expertise are listed below:';
 });
