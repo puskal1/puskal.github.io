@@ -63,6 +63,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+$color1:#2B3A42;
+$color2:#3F5765;
+$color3:#BDD4DE;
+$color4:#EFEFEF;
+$color5:#F05522;
 .left{float: left;}
 .right{float:right;}
 .container{max-width: 1024px; width: 100%; margin: 0 auto;}
@@ -74,17 +79,26 @@ body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
         width: 100%;
         @extend .right;
         li{
+            margin-top: 20px;
             a{
                 font-size:16px;
                 @extend .left;
                 display: inline-block;
                 padding: 10px 20px;
-                color: #fff;
-                background-color: #c82441;
+                color: $color5;
+                //background-color: $color5;
                 text-decoration: none;
                 &:hover{
-                    background-color: #e25a72;
+                    //background-color: #e25a72;
+                    color: $color3;
                 }
+            }
+        }
+        li.logo {
+            margin-top: 0px;
+            a{background: transparent;}
+            img{
+                width: 50px;
             }
         }
 
