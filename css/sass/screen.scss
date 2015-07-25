@@ -70,33 +70,39 @@ $color4:#EFEFEF;
 $color5:#F05522;
 .left{float: left;}
 .right{float:right;}
+html,body,.partials{width: 100%;height: 100%; overflow: hidden;}
 .container{max-width: 1024px; width: 100%; margin: 0 auto;}
 body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
 
 .nav{
     width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
     ul{
         width: 100%;
         @extend .right;
         li{
-            margin-top: 20px;
+            margin-top: 13px;
             a{
                 font-size:16px;
                 @extend .left;
                 display: inline-block;
                 padding: 10px 20px;
-                color: $color5;
-                //background-color: $color5;
+                color: $color3;
+                background-color: rgba(239,239,239,.2);
                 text-decoration: none;
                 &:hover{
                     //background-color: #e25a72;
-                    color: $color3;
+                   // color: $color1;
                 }
             }
         }
         li.logo {
             margin-top: 0px;
-            a{background: transparent;}
+
+            a{  background-color: transparent;}
             img{
                 width: 50px;
             }
@@ -104,6 +110,26 @@ body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
 
     }
 
+}
+.banner {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    video{width: 100%;
+        position: absolute;
+        //height: 100%;
+        top: -185px;
+        left: 0px;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.8);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+    }
 }
 .profile_pic{  border-radius: 128px;width: 15%;  @include filter(grayscale(100%));
             &:hover{

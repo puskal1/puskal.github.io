@@ -28,6 +28,10 @@ pkApp.config(function($routeProvider) {
         .when('/expertise', {
             templateUrl : 'pages/expertise.html',
             controller  : 'expertiseController'
+        })
+        .when('/about', {
+            templateUrl : 'pages/expertise.html',
+            controller  : 'expertiseController'
         });
 });
 
@@ -48,3 +52,7 @@ pkApp.controller('contactController', function($scope) {
 pkApp.controller('expertiseController', function($scope) {
     $scope.message = 'My area of expertise are listed below:';
 });
+pkApp.controller('aboutController', function($scope) {
+    $scope.message = 'Hi! I am Puskal.';
+});
+
