@@ -87,6 +87,8 @@ body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
             margin-top: 13px;
             a{
                 font-size:16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
                 @extend .left;
                 display: inline-block;
                 padding: 10px 20px;
