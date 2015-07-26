@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 @import 'compass/css3/filter';
+@import "compass/css3/transition";
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
@@ -92,12 +93,13 @@ body{font-family: 'Open Sans', sans-serif; font-weight: 300;}
                 @extend .left;
                 display: inline-block;
                 padding: 10px 20px;
-                color: $color3;
-                background-color: rgba(239,239,239,.2);
+                color: $color5;
+                //background-color: rgba(239,239,239,.2);
                 text-decoration: none;
                 &:hover{
                     //background-color: #e25a72;
-                   // color: $color1;
+                    color: $color1;
+                    background-color: rgba(239,239,239,1);
                 }
             }
         }
