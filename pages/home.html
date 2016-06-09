@@ -1,11 +1,12 @@
 <!-- home.html -->
+
 <div class="banner text-center">
     <div class="overlay"></div>
-    <video id="banner-video" autoplay loop>
+ <!--   <video id="banner-video" autoplay loop>
         <source src="video/bg4.mp4" type="video/mp4">
-        <!--<source src="movie.ogg" type="video/ogg">-->
+        <source src="movie.ogg" type="video/ogg">
 
-    </video>
+    </video>-->
 
     <div class="center banner-content">
         <!--<h1>Home Page</h1>-->
@@ -21,9 +22,22 @@
 
 
 </div>
-
+<div style="position:absolute;left:0;top:0;" class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="video/Orange-Ripple/MP4/Orange-Ripple.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/Orange-Ripple/WEBM/Orange-Ripple.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="video/Orange-Ripple/Snapshots/Orange-Ripple.jpg" alt="Orange Ripple">
+        </div>
+    </div>
+</div>
+<!--
 <script>
 var vid = document.getElementById("banner-video");
 vid.playbackRate = 0.5;
     </script>
+-->
 <script src="js/script.js"></script>
